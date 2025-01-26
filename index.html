@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea House</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/c6e5a075a2.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-<script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c6e5a075a2.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -22,12 +23,57 @@
   </script>
 </head>
 <style>
-    .manrope-font {
-  font-family: "Manrope", serif;
-}
-
+  .manrope-font {
+    font-family: "Manrope", serif;
+  }
 </style>
+
 <body>
+  <!-- MAin section -->
+  <main class="manrope-font max-w-screen-xl mx-auto px-16 lg:px-24">
+    <!-- Header section -->
+    <header class="flex flex-col md:flex-row justify-between pt-10 mb-20">
+      <!-- Text content -->
+      <div>
+        <h1 class="text-5xl md:text-7xl font-medium md:font-semibold">It's good <br> tea time at The <br> Tea House</h1>
+        <br>
+        <p class="text-gray-500 w-3/4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste
+          Buds.</p>
+        <br>
+        <button
+          class="bg-linear-to-r to-[#FF0000] from-[#FF8938]  px-4 py-3 rounded-lg text-white font-semibold">Explore More
+          <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+      </div>
+      <!-- Image content -->
+      <div class="relative">
+        <!-- Image -->
+        <div>
+          <img class="w-full" src="./images/banner.png" alt="">
+        </div>
+        <!-- Crad -->
+        <div class="absolute flex justify-center items-center bg-white px-2 py-2 md:px-7 lg:py-4 shadow-lg rounded-lg gap-3 top-30 md:top-80 md:left-32 lg:left-24">
+          <!-- icon -->
+          <div><i class="fa-solid fa-star text-2xl text-[#FFDC64]"></i></div>
+          <!-- text -->
+          <div>
+            <h2 class="font-extrabold lg:text-2xl">5%.00</h2>
+            <p class="text-gray-500 font-bold text-sm ">Trust Pilot Ratings</p>
+          </div>
+        </div>
+      </div>
+
+
+    </header>
+
+
+
     
+
+  </main>
+
+
+
+
 </body>
+
 </html>
